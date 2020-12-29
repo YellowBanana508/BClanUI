@@ -1,0 +1,8 @@
+name: BClanUI
+version: 1.0.0
+main: Clan\Main
+api: 3.16.1
+author: YellowBanana
+commands:
+ clanui:
+  description: "Opens the UI to manage clan!"
