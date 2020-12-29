@@ -1,7 +1,7 @@
 name: BClanUI
 version: 1.0.0
 main: Clan\Main
-api: 3.16.1
+api: 3.0.0
 author: YellowBanana
 commands:
  clanui:
