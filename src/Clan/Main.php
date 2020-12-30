@@ -30,6 +30,12 @@ class Main extends PluginBase implements Listener {
 		$this->eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");	
 	}
 	
+	public function execute(CommandSender $sender, string $commandLabel, array $args): bool {
+        if (!$sender instanceof Player) {
+            $sender->sendMessage(TextFormat::RED . "This command is available in-game only!");
+            return false;
+        }
+	
 	public function onCommand(CommandSender $sender, Command $command, String $label, array $args) : bool {
         switch($command->getName()){
             case "clanui":
@@ -97,7 +103,7 @@ class Main extends PluginBase implements Listener {
         });
         $config = $this->getConfig();
         $name = $sender->getName();
-        $form->setTitle("§b§lPixCraft §a§lSkyBlock");
+        $form->setTitle("§c§lManage your Clan");
         $form->setContent("How can we help you?");
 		$form->addButton("§c§lExit");
 		$form->addButton("§c§lCreate Clan");
