@@ -3,6 +3,7 @@ version: 1.0.0
 main: Clan\Main
 api: 3.0.0
 author: YellowBanana
+depend: BedrockClans
 commands:
  clanui:
   description: "Opens the UI to manage clan!"
