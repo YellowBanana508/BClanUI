@@ -35,6 +35,7 @@ class Main extends PluginBase implements Listener {
             $sender->sendMessage(TextFormat::RED . "This command is available in-game only!");
             return false;
         }
+  }
 	
 	public function onCommand(CommandSender $sender, Command $command, String $label, array $args) : bool {
         switch($command->getName()){
